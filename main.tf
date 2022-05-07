@@ -59,11 +59,10 @@ client_key = base64decode(yamldecode(base64decode(data.intersight_kubernetes_clu
     } 
 }
 
-resource helm_release iwok8scollector {
-  name       = "iwok8scollector"
+resource helm_release helloiksfrtfcb {
+  name       = "iwocollector"
   namespace = "default"
   chart = "https://github.com/CiscodCloud/helm_chart/raw/main/iwok8scollector-0.6.2.tgz"
-
   set {
     name  = "iwoServerVersion"
     value = "8.0"
@@ -83,4 +82,3 @@ resource helm_release iwok8scollector {
 locals {
     clustername = yamldecode(data.terraform_remote_state.global.outputs.clustername)
 }
-
