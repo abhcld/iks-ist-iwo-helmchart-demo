@@ -62,14 +62,14 @@ client_key = base64decode(yamldecode(base64decode(data.intersight_kubernetes_clu
 resource helm_release helloiksfrtfcb {
   name       = "iwocollector"
   namespace = "default"
-  chart = "https://github.com/CiscodCloud/helm_chart/raw/main/iwok8scollector-0.6.2.tgz"
+  chart = "https://github.com/abhcld/iks-ist-iwo-helmchart-demo/raw/main/iwo-k8s-collector-v1.0.1.tgz"
   set {
     name  = "iwoServerVersion"
     value = "8.0"
   }
   set {
     name  = "collectorImage.tag"
-    value = "8.0.6"
+    value = "8.1.3"
   }
   set {
     name  = "targetName"
