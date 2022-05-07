@@ -65,11 +65,11 @@ resource helm_release helloiksfrtfcb {
   chart = "https://github.com/abhcld/iks-ist-iwo-helmchart-demo/raw/main/iwo-k8s-collector-v1.0.1.tgz"
   set {
     name  = "iwoServerVersion"
-    value = "8.0"
+    value = "8.5"
   }
   set {
     name  = "collectorImage.tag"
-    value = "8.1.3"
+    value = "8.5.1"
   }
   set {
     name  = "targetName"
