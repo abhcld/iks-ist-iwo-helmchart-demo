@@ -73,7 +73,7 @@ resource helm_release helloiksfrtfcb {
   }
   set {
     name  = "targetName"
-    value = "kubernetes-cluster01"
+    value = local.clustername
   }
 }
 
